@@ -34,7 +34,7 @@ type PhotoURL {
 type Photo {
   id: ID!
   title: String
-  original: PhotoURL @neo4j_ignore
+  # CHANGE THIS
   thumbnail: PhotoURL @neo4j_ignore
   album: Album! @relation(name: "CONTAINS", direction: "IN")
 }
